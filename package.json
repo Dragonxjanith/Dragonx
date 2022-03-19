@@ -1,14 +1,14 @@
 {
-  "name": "ALPHA",
-  "version": "V 4.0.0",
+  "name": "Dragonx",
+  "version": "V 1.5.0",
   "description": ".",
-  "main": "./xmas/bot.js",
+  "main": "./Dragonx/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DARKCRIME1/xmas.git"
+    "url": "git+https://github.com/Dragonxjanith/Dragonx.git"
   },
   "keywords": [
     "whatsapp",
