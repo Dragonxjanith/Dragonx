@@ -21,7 +21,7 @@ if (Config.WORKTYPE == 'public') {
 │  
 │
 │         🛡️POWERD BY🛡️
-│        ⎝🛡️ ALPHA 🛡️⎠
+│        ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
 ╰──────────────`,quoted: message.data})
 
     }));

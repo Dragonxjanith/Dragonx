@@ -1,4 +1,4 @@
-const Alpha = require('../events');
+const  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 const axios = require("axios");
@@ -38,10 +38,10 @@ const end = `status: 200
 url : https://drive.google.com/file/d/1HXclQumyRIRy9STTiHcTAHpSMM2mj5ZF/view?usp=sharing
 host: drive.google.com
 ✅ Hack successfully!
-*ʜᴀᴄᴋᴇᴅ ʙʏ: ALPHA 😈*
+*ʜᴀᴄᴋᴇᴅ ʙʏ:  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈*
 `
 
-Alpha.addrex({pattern: 'hack$', fromMe: WType, desc: HACK_DESC, deleteCommand: true}, (async (message, match) => {
+dargonx.addrex({pattern: 'hack$', fromMe: WType, desc: HACK_DESC, deleteCommand: true}, (async (message, match) => {
 
 var thumb = await axios.get("https://telegra.ph/file/dfa0564731ced96dc2b73.jpg", {responseType: "arraybuffer"});
 

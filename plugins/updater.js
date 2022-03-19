@@ -41,7 +41,7 @@ Trex.addrex({pattern: 'up$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (mes
     }
 }));
 
-Trex.addrex({pattern: 'upalpha$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
+Trex.addrex({pattern: 'up ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ  $', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
