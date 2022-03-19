@@ -1,4 +1,4 @@
-const  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   = require('../events');
+const Trex = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 const axios = require("axios");
