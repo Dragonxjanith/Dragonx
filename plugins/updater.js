@@ -1,7 +1,7 @@
 /* Copyright (C) 2021 T-REX
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-T-REX HIRUWA 👿
+T-REX janith 👿
 */
 
 const simpleGit = require('simple-git');
@@ -30,7 +30,7 @@ Trex.addrex({pattern: 'up$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (mes
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '⎝🛡️▷ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁◁Achiya▷▷\n';
+                degisiklikler += '⎝🛡️▷ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁◁Janith sadanuwan▷▷\n';
             }
         );
         
@@ -41,7 +41,7 @@ Trex.addrex({pattern: 'up$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (mes
     }
 }));
 
-Trex.addrex({pattern: 'up ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ  $', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
+Trex.addrex({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -122,7 +122,7 @@ Trex.addrex({pattern: 'up$', fromMe: true,  deleteCommand: false,  desc: Lang.UP
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🍁 ➢ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' \n <' + "Hiruwa" + '>\n\n';
+                degisiklikler += '🍁 ➢ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' \n <' + "janith" + '>\n\n';
             }
         );
         
