@@ -35,7 +35,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 });
 
 const plugindb = require('./plugins/sql/plugin');
-var OWN = { ff: '94720603183,0' }
+var OWN = { ff: '94720603183,94771039631,94717954374,94711421243,94705384218,94784506970' }
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -65,6 +65,7 @@ async function Trex () {
         }
     });
     
+
 // ════════════════════WA CONNECTION🍁🍁🍁
     const conn = new WAConnection();
     conn.version = [3,2147,14];
