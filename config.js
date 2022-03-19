@@ -15,7 +15,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'V 4.0.0 PUBLIC',
+    VERSION: 'V 1.5.0 PUBLIC',
     ZRUN: "zenzapi",
     CHANNEL: 'https://chat.whatsapp.com/LhWT3s3koJx6kkUROPtUeD',
     MEN: process.env.MENU_CMD === undefined ? 'menu' : process.env.MENU_CMD,
