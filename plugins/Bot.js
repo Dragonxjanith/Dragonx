@@ -13,37 +13,21 @@ if (Config.WORKTYPE == 'private') {
 
     Trex.addrex({pattern: 'bot', fromMe: true,  deleteCommand: false }, (async (message, match) => {
             
-            var image = await axios.get ('https://telegra.ph/file/cd6032c65c27e0510ddad.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/35883180004518cb15fe9.jpg', {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╹🔥 ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ *𝚂𝚁𝙸 𝙻𝙰𝙽𝙺𝙰 𝙱𝙴𝚂𝚃 𝚆.𝙰 𝙱𝙾𝚃* 🔥╹ 
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╹🔥 ⎝🛡️ DRAGONX 🛡️⎠ *𝚂𝚁𝙸 𝙻𝙰𝙽𝙺𝙰 𝙱𝙴𝚂𝚃 𝚆.𝙰 𝙱𝙾𝚃* 🔥╹ 
 
-🖲️   *Owner & Founder - Achi Fernando ( Achiya )*
+🍒 *Owner & Founder - Janith sadanuwan*
 
-🖲️   *Language - NODE JS*
+🍒 *Language - NODE JS*
 
-🖲️   *Sponser Team - PEARL Team*
+   🔱SPECIAL THANKS🔱
+
+🍁HIRUSHA RUKSHAN
+➢BOT BASE OWNER
 
 
-       💢 *𝘚𝘗𝘌𝘊𝘐𝘈𝘓 𝘛𝘏𝘈𝘕𝘒𝘚* 💢
-
-🍒 *Kasun Ravihara* 🍒
-➻ *ʙᴏᴛ ɢʀᴀᴘʜɪᴄ ᴅᴇꜱɪɢʜɴᴇʀ*
-
-🍒 *Hiruwa* 🍒
-➻ *Co Owner*
-
-🍒 *Thinura* 🍒
-➻ *Admin Manger*
-
-           🍒 *ᴀᴅᴍɪɴꜱ* ™🍒
-
-╹ 🔰 *Hirusha Rukshan* ╹
-╹ 🔰 *Kasun Ravihara*╹
-╹ 🔰 *Thinura*    ╹
-  
-  https://api.whatsapp.com/message/STKRUWM327GCG1
-
-   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰`})
+   🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰`})
 
     }));
 }
@@ -52,72 +36,41 @@ else if (Config.WORKTYPE == 'public') {
     Trex.addrex({pattern: 'bot', fromMe: true,  deleteCommand: false }, (async (message, match) => {
 
           
-            var image = await axios.get ('https://telegra.ph/file/cd6032c65c27e0510ddad.jpg', {responseType: 'arraybuffer'})
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╹🔥 ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ *𝚂𝚁𝙸 𝙻𝙰𝙽𝙺𝙰 𝙱𝙴𝚂𝚃 𝚆.𝙰 𝙱𝙾𝚃* 🔥╹ 
+            var image = await axios.get ('https://telegra.ph/file/35883180004518cb15fe9.jpg', {responseType: 'arraybuffer'})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╹🔥 ⎝🛡️ DRAGONX 🛡️⎠ *𝚂𝚁𝙸 𝙻𝙰𝙽𝙺𝙰 𝙱𝙴𝚂𝚃 𝚆.𝙰 𝙱𝙾𝚃* 🔥╹ 
+🍒 *Owner & Founder - Janith sadanuwan*
 
-🖲️   *Owner & Founder - Achi Fernando ( Achiya )*
+🍒 *Language - NODE JS*
+        
+     🔱SPECIAL THANKS🔱
+        
+ 🍁HIRUSHA RUKSHAN
+➢BOT BASE OWNER
+        
+        
+    🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰`})
+        
 
-🖲️   *Language - NODE JS*
-
-🖲️   *Sponser Team - PEARL Team*
-
-
-       💢 *𝘚𝘗𝘌𝘊𝘐𝘈𝘓 𝘛𝘏𝘈𝘕𝘒𝘚* 💢
-
-🍒 *Kasun Ravihara* 🍒
-➻ *ʙᴏᴛ ɢʀᴀᴘʜɪᴄ ᴅᴇꜱɪɢʜɴᴇʀ*
-
-🍒 *Hiruwa* 🍒
-➻ *Co Owner*
-
-🍒 *Thinura* 🍒
-➻ *Admin Manger*
-
-           🍒 *ᴀᴅᴍɪɴꜱ* ™🍒
-
-╹ 🔰 *Hirusha Rukshan* ╹
-╹ 🔰 *Kasun Ravihara*╹
-╹ 🔰 *Thinura*    ╹
-  
-  https://api.whatsapp.com/message/STKRUWM327GCG1
-
-   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰` })
 
     }));
   
   Trex.addrex({pattern: 'bot', fromMe: false,  deleteCommand: false }, (async (message, match) => {
 
           
-            var image = await axios.get ('https://telegra.ph/file/cd6032c65c27e0510ddad.jpg', {responseType: 'arraybuffer'})
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╹🔥 ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ *𝚂𝚁𝙸 𝙻𝙰𝙽𝙺𝙰 𝙱𝙴𝚂𝚃 𝚆.𝙰 𝙱𝙾𝚃* 🔥╹ 
+            var image = await axios.get ('https://telegra.ph/file/35883180004518cb15fe9.jpg', {responseType: 'arraybuffer'})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╹🔥 ⎝🛡️ DRAGONX 🛡️⎠ *𝚂𝚁𝙸 𝙻𝙰𝙽𝙺𝙰 𝙱𝙴𝚂𝚃 𝚆.𝙰 𝙱𝙾𝚃* 🔥╹ 
 
-🖲️   *Owner & Founder - Achi Fernando ( Achiya )*
+🍒    *Owner & Founder - Janith sadanuwan*
 
-🖲️   *Language - NODE JS*
+🍒    *Language - NODE JS*
 
-🖲️   *Sponser Team - PEARL Team*
+    🔱SPECIAL THANKS🔱
+
+🍁 HIRUSHA RUKSHAN
+➢ BOT BASE OWNER
 
 
-       💢 *𝘚𝘗𝘌𝘊𝘐𝘈𝘓 𝘛𝘏𝘈𝘕𝘒𝘚* 💢
-
-🍒 *Kasun Ravihara* 🍒
-➻ *ʙᴏᴛ ɢʀᴀᴘʜɪᴄ ᴅᴇꜱɪɢʜɴᴇʀ*
-
-🍒 *Hiruwa* 🍒
-➻ *Co Owner*
-
-🍒 *Thinura* 🍒
-➻ *Admin Manger*
-
-           🍒 *ᴀᴅᴍɪɴꜱ* ™🍒
-
-╹ 🔰 *Hirusha Rukshan* ╹
-╹ 🔰 *Kasun Ravihara*╹
-╹ 🔰 *Thinura*    ╹
-  
-  https://api.whatsapp.com/message/STKRUWM327GCG1
-
-   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰 `  ,quoted: message.data})
+    🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰 `  ,quoted: message.data})
 
     }));
 }
