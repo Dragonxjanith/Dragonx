@@ -99,7 +99,7 @@ var thumb = await axios.get("https://telegra.ph/file/dfa0564731ced96dc2b73.jpg",
    
    await new Promise(r => setTimeout(r, time[random1] ));
    
-   await message.client.sendMessage(message.jid, end ,MessageType.text, { contextInfo: { key: {"fromMe": false, "participant": "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "120363038448154828@g.us","inviteCode": "https://achifernando.tk","groupName": "HACKED 😈", "caption": `${Config.USER_NAME}`, 'jpegThumbnail': Buffer.from(thumb.data)}}} });
+   await message.client.sendMessage(message.jid, end ,MessageType.text, { contextInfo: { key: {"fromMe": false, "participant": "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "120363038448154828@g.us","inviteCode": "https://janithsadanuwan.tk","groupName": "HACKED 😈", "caption": `${Config.USER_NAME}`, 'jpegThumbnail': Buffer.from(thumb.data)}}} });
 
    }
    
