@@ -532,7 +532,7 @@ Example : .covid Sri Lanka°
        
        const button = {
         buttonText: '🛎 𝗖𝗹𝗶𝗰𝗸 𝗠𝗲  🪄',
-        description: `🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛`,
+        description: `🎲 𝑫𝒂𝒓𝒈𝒐𝒏 𝑿  𝑪𝒎𝒅 𝑷𝒂𝒏𝒆𝒍 🎯`,
         sections: sections,
         listType: 1
        }
@@ -1064,11 +1064,11 @@ Example : .covid Sri Lanka°
         {title: '⎝🛡️ Work Type PRIVATE🛡️⎠', description:"▷▷▷▷▷▷\n\n\n Type .private to private mode ▷", rowId:"rowid2"}
        ]
        
-       const sections = [{title: "⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛", rows: rows}]
+       const sections = [{title: "🎲 𝑫𝒂𝒓𝒈𝒐𝒏 𝑿  𝑪𝒎𝒅 𝑷𝒂𝒏𝒆𝒍 🎯", rows: rows}]
        
        const button = {
         buttonText: '🛎 𝗖𝗹𝗶𝗰𝗸 𝗠𝗲  🪄',
-        description: `🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛`,
+        description: `🎲 𝑫𝒂𝒓𝒈𝒐𝒏 𝑿  𝑪𝒎𝒅 𝑷𝒂𝒏𝒆𝒍 🎯`,
         sections: sections,
         listType: 1
        }
@@ -1606,11 +1606,11 @@ Example : .covid Sri Lanka°
         {title: '⎝🛡️ Work Type PRIVATE 🛡️⎠', description:"▷▷▷▷▷▷\n\n\nType .private to private mode", rowId:"rowid2"}
        ]
        
-       const sections = [{title: " ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL.📛", rows: rows}]
+       const sections = [{title: "🎲 𝑫𝒂𝒓𝒈𝒐𝒏 𝑿  𝑪𝒎𝒅 𝑷𝒂𝒏𝒆𝒍 🎯", rows: rows}]
        
        const button = { 
         buttonText: '🛎 𝗖𝗹𝗶𝗰𝗸 𝗠𝗲  🪄',
-        description: ` ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ  🛡️⎠ CMD ✨ PANEL. 📛`,
+        description: ` 🎲 𝑫𝒂𝒓𝒈𝒐𝒏 𝑿  𝑪𝒎𝒅 𝑷𝒂𝒏𝒆𝒍 🎯`,
         sections: sections,
         listType: 1
        }
