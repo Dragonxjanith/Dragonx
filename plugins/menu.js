@@ -531,8 +531,8 @@ Example : .covid Sri Lanka°
        const sections = [{title: "⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛", rows: rows}]
        
        const button = {
-        buttonText: 'Click Me▷',
-        description: `⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛`,
+        buttonText: '🛎 𝗖𝗹𝗶𝗰𝗸 𝗠𝗲  🪄',
+        description: `🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛`,
         sections: sections,
         listType: 1
        }
@@ -1067,8 +1067,8 @@ Example : .covid Sri Lanka°
        const sections = [{title: "⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛", rows: rows}]
        
        const button = {
-        buttonText: 'Click Me▷',
-        description: `⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛`,
+        buttonText: '🛎 𝗖𝗹𝗶𝗰𝗸 𝗠𝗲  🪄',
+        description: `🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛`,
         sections: sections,
         listType: 1
        }
@@ -1608,9 +1608,9 @@ Example : .covid Sri Lanka°
        
        const sections = [{title: " ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL.📛", rows: rows}]
        
-       const button = {
-        buttonText: 'Click Me▷',
-        description: ` ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛`,
+       const button = { 
+        buttonText: '🛎 𝗖𝗹𝗶𝗰𝗸 𝗠𝗲  🪄',
+        description: ` ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ  🛡️⎠ CMD ✨ PANEL. 📛`,
         sections: sections,
         listType: 1
        }
