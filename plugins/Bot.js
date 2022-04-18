@@ -21,10 +21,7 @@ if (Config.WORKTYPE == 'private') {
 
 🍒 *Language - NODE JS*
 
-   🔱SPECIAL THANKS🔱
 
-🍁HIRUSHA RUKSHAN
-➢BOT BASE OWNER
 
 
    🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰`})
@@ -42,11 +39,7 @@ else if (Config.WORKTYPE == 'public') {
 
 🍒 *Language - NODE JS*
         
-     🔱SPECIAL THANKS🔱
-        
- 🍁HIRUSHA RUKSHAN
-➢BOT BASE OWNER
-        
+
         
     🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰`})
         
@@ -64,10 +57,6 @@ else if (Config.WORKTYPE == 'public') {
 
 🍒    *Language - NODE JS*
 
-    🔱SPECIAL THANKS🔱
-
-🍁 HIRUSHA RUKSHAN
-➢ BOT BASE OWNER
 
 
     🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰 `  ,quoted: message.data})
