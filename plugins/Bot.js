@@ -21,7 +21,7 @@ if (Config.WORKTYPE == 'private') {
 
 🍒 *Language - NODE JS*
 
-
+🇱🇰 Hay All I'm Alive now 🇱🇰\n\n🧿 My name : ⎝🛡 Dragon x 🛡⎠\n\n\n ◐. Developer:Janith Sadanuwan \n ◐. Github - https://tinyurl.com/ycq7ra4x \n ◐. Youtube - https://tinyurl.com/yalqofqs \n ◐. Owner -https://tinyurl.com/y7evah34  \n ◐. Our Web - https://tinyurl.com/y7ul7kt4 \n\n ◐. All Cammands -Type .menu\n\n\nThank You For Using ⎝🛡 *Dragon x* 🛡⎠
 
 
    🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰`})
@@ -39,7 +39,7 @@ else if (Config.WORKTYPE == 'public') {
 
 🍒 *Language - NODE JS*
         
-
+🇱🇰 Hay All I'm Alive now 🇱🇰\n\n🧿 My name : ⎝🛡 Dragon x 🛡⎠\n\n\n ◐. Developer:Janith Sadanuwan \n ◐. Github - https://tinyurl.com/ycq7ra4x \n ◐. Youtube - https://tinyurl.com/yalqofqs \n ◐. Owner -https://tinyurl.com/y7evah34  \n ◐. Our Web - https://tinyurl.com/y7ul7kt4 \n\n ◐. All Cammands -Type .menu\n\n\nThank You For Using ⎝🛡 *Dragon x* 🛡⎠
         
     🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰`})
         
@@ -57,7 +57,7 @@ else if (Config.WORKTYPE == 'public') {
 
 🍒    *Language - NODE JS*
 
-
+🇱🇰 Hay All I'm Alive now 🇱🇰\n\n🧿 My name : ⎝🛡 Dragon x 🛡⎠\n\n\n ◐. Developer:Janith Sadanuwan \n ◐. Github - https://tinyurl.com/ycq7ra4x \n ◐. Youtube - https://tinyurl.com/yalqofqs \n ◐. Owner -https://tinyurl.com/y7evah34  \n ◐. Our Web - https://tinyurl.com/y7ul7kt4 \n\n ◐. All Cammands -Type .menu\n\n\nThank You For Using ⎝🛡 *Dragon x* 🛡⎠
 
     🔰*ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ*🔰 `  ,quoted: message.data})
 
