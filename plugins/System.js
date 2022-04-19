@@ -96,7 +96,6 @@ else if (Config.WORKTYPE == 'public') {
             const buttons = [
   {buttonId: 'MENU', buttonText: {displayText: '🙈 I AM FINE 😜'}, type: 1},//jakakkak
   {buttonId: 'MNU', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
-  {buttonId: 'MENU', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
  ]
 
 const btn = {
