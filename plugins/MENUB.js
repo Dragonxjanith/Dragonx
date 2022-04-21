@@ -41,9 +41,9 @@ if (hrs >= 17 && hrs <= 19) wish = '*ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥*'
 if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
     
     const rows = [
-        {title: '⎝🛡️ ALL MENU 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 ALL MENU 😈', description: `▷▷▷▷▷▷\n\n\n
  ╭────────────────
- │ ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
+ │ 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈
  ╰────────────────
  ╭────────────────
  │ Hello ▷ Dear
@@ -55,7 +55,7 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  │   My Bot Work as
  │✨ `+Config.WORKTYPE+` ✨
  │
- ╰────────────────
+ ╰────────────────                                            
  ╭────────────────
  │       ✨  BOT  ✨ 
  │        ──────────
@@ -226,12 +226,12 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  ╰────────────────
  
           ✨ POWERD BY ✨
-          ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
+          😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈
      ✨       Janith sadanuwan        ✨
 ` , rowId:"rowid1"},
-        {title: '⎝🛡️ ADVANCE MENU 🛡️⎠', description:`▷▷▷▷▷▷\n\n\n
+        {title: '😈 ADVANCE MENU 😈', description:`▷▷▷▷▷▷\n\n\n
 ╔═══════════════════════╗
-         ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ 
+         😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 
 ═════════════════════════
 ✨ Command: °.xmedia°
 ➢ Description: °A plugin that have 25 media tools.°
@@ -295,9 +295,9 @@ Example : .covid Sri Lanka°
 ✨ Command: °.video°
 ➢ Description: °Downloading videos from YouTube°
 ✨ Command: °.insta°
-➢ Description: °✨➢ ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠  Download instagram videos.°
+➢ Description: °✨➢ 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈  Download instagram videos.°
 ✨ Command: °.fb°
-➢ Description: °✨➢ ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠  Download Facebook videos.°
+➢ Description: °✨➢ 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈  Download Facebook videos.°
 ✨ Command: °.trt°
 ➢ Description: °It translates with Google Translator. You must mention any message.°
 ⌨️ Example: °.trt en si (From English to Sinhala)°
@@ -374,9 +374,9 @@ Example : .covid Sri Lanka°
 ✨ Command: °.short°
 ➢ Description: °Shorten link.°
 `, rowId:"rowid3"},
-        {title: '⎝🛡️ Love Pack 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 Love Pack 😈', description: `▷▷▷▷▷▷\n\n\n
 ╔═══════════════════════╗
-                 ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
+                 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈
 ═════════════════════════
                   ♥ LOVE PACK ♥
                   
@@ -398,13 +398,13 @@ Example : .covid Sri Lanka°
 ➢ Description :  Send I need Girl friend message..
 ♥ Command : need bf
 ➢ Description :  Send i need Boy friend message..
-      ╔═⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠═╗
+      ╔═😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈═╗
        ╚ ENJOY WITH US ╝
 ╚══════════════════════
 `, rowId:"rowid4"},
-        {title: '⎝🛡️ FF PACK 🛡️⎠', description:`▷▷▷▷▷▷\n\n\n
+        {title: '😈 FF PACK 😈', description:`▷▷▷▷▷▷\n\n\n
 ╔═════════════════════╗
-║         ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠  
+║         😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈  
 ║         ║✨╚FF PACK╝✨║
 ║
 ╠═➢ ✨.ff9       ❴your text❵
@@ -509,10 +509,10 @@ Example : .covid Sri Lanka°
 ║
 ║▷Creator: HIRUSHA
 ║
-║   ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ 
+║   😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 
 ╚═════════════════════╝
 `, rowId:"rowid5"},
-        {title: '⎝🛡️ Software Store 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 Software Store 😈', description: `▷▷▷▷▷▷\n\n\n
 ╭───────────────
 │  ✨ SOFTWARE STORE BY Jnaith sadanuwan ✨
 │
@@ -524,20 +524,20 @@ Example : .covid Sri Lanka°
 │  ◎Android Emulator Form Pc =.em
 │
 │         ✨POWERD BY✨
-│        ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
+│        😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈
 ╰──────────────
 `, rowId:"rowid6"},
-        {title: '⎝🛡️ Apk Store 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 Apk Store 😈', description: `▷▷▷▷▷▷\n\n\n
 ╔═════════════════════╗
-║         ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠   
+║         😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈   
 ║        ║✨╚APK STORE╝✨║
 ║
 ║    Coming Soon
 ║
-║ ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠   
+║ 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈   
 ╚═════════════════════╝
 `, rowId:"rowid20"},
-        {title: '⎝🛡️ DOWNLOADER 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 DOWNLOADER 😈', description: `▷▷▷▷▷▷\n\n\n
  ╭────────────────
  │   ✨  Downloader ✨
  │
@@ -554,9 +554,9 @@ Example : .covid Sri Lanka°
  │
  ╰────────────────
 `, rowId:"rowid9"},
-        {title: '⎝🛡️ABOUT  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   BOT 🛡️⎠', description:`▷▷▷▷▷▷\n\n\n
+        {title: '😈ABOUT  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   BOT 😈', description:`▷▷▷▷▷▷\n\n\n
 ✨ Developer : janih   sadanuwan
-✨ Bot             : ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ WhatsApp User Bot v4.0.0
+✨ Bot             : 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 WhatsApp User Bot v4.0.0
 ✨ Language : Sinhala & English
 ✨ Sponcer Team : PEARL TEAM SRI LANKA
 ✨ Develop language : Node js
@@ -564,11 +564,11 @@ Example : .covid Sri Lanka°
 `, rowId:"rowid2"}
        ]
        
-       const sections = [{title: "⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛", rows: rows}]
+       const sections = [{title: "😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 CMD ✨ PANEL. 📛", rows: rows}]
        
        const button = {
         buttonText: 'Click Me▷',
-        description: "⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛",
+        description: "😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 CMD ✨ PANEL. 📛",
         sections: sections,
         listType: 1
        }
@@ -604,9 +604,9 @@ if (hrs >= 17 && hrs <= 19) wish = '*ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥*'
 if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
     
     const rows = [
-        {title: '⎝🛡️ ALL MENU 🛡️⎠ ', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 ALL MENU 😈 ', description: `▷▷▷▷▷▷\n\n\n
 ╭────────────────
- │ ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
+ │ 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈
  ╰────────────────
  ╭────────────────
  │ Hello ▷ Dear
@@ -790,12 +790,12 @@ if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
  ╰────────────────
  
           ✨ POWERD BY ✨
-          ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
+          😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈
      ✨   Janith sadanuwan       ✨
 ` , rowId:"rowid1"},
-        {title: '⎝🛡️ ADVANCE MENU 🛡️⎠', description:`▷▷▷▷▷▷\n\n\n
+        {title: '😈 ADVANCE MENU 😈', description:`▷▷▷▷▷▷\n\n\n
 ╔═══════════════════════╗
-         ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ 
+         😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 
 ═════════════════════════
 ✨ Command: °.xmedia°
 ➢ Description: °A plugin that have 25 media tools.°
@@ -859,9 +859,9 @@ Example : .covid Sri Lanka°
 ✨ Command: °.video°
 ➢ Description: °Downloading videos from YouTube°
 ✨ Command: °.insta°
-➢ Description: °✨➢ ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠  Download instagram videos.°
+➢ Description: °✨➢ 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈  Download instagram videos.°
 ✨ Command: °.fb°
-➢ Description: °✨➢ ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠  Download Facebook videos.°
+➢ Description: °✨➢ 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈  Download Facebook videos.°
 ✨ Command: °.trt°
 ➢ Description: °It translates with Google Translator. You must mention any message.°
 ⌨️ Example: °.trt en si (From English to Sinhala)°
@@ -938,9 +938,9 @@ Example : .covid Sri Lanka°
 ✨ Command: °.short°
 ➢ Description: °Shorten link.°
 `, rowId:"rowid3"},
-        {title: '⎝🛡️ Love Pack 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 Love Pack 😈', description: `▷▷▷▷▷▷\n\n\n
 ╔═══════════════════════╗
-                 ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
+                 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈
 ═════════════════════════
                   ♥ LOVE PACK ♥
                   
@@ -962,13 +962,13 @@ Example : .covid Sri Lanka°
 ➢ Description :  Send I need Girl friend message..
 ♥ Command : need bf
 ➢ Description :  Send i need Boy friend message..
-      ╔═⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠═╗
+      ╔═😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈═╗
        ╚ ENJOY WITH US ╝
 ╚══════════════════════
 `, rowId:"rowid4"},
-        {title: '⎝🛡️ FF PACK 🛡️⎠', description:`▷▷▷▷▷▷\n\n\n
+        {title: '😈 FF PACK 😈', description:`▷▷▷▷▷▷\n\n\n
 ╔═════════════════════╗
-║         ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠  
+║         😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈  
 ║         ║✨╚FF PACK╝✨║
 ║
 ╠═➢ ✨.ff9       ❴your text❵
@@ -1073,10 +1073,10 @@ Example : .covid Sri Lanka°
 ║
 ║▷Creator: HIRUSHA
 ║
-║   ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ 
+║   😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 
 ╚═════════════════════╝
 `, rowId:"rowid5"},
-        {title: '⎝🛡️ Software Store 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 Software Store 😈', description: `▷▷▷▷▷▷\n\n\n
 ╭───────────────
 │  ✨ SOFTWARE STORE BY Janith sadanuwan ✨
 │
@@ -1088,21 +1088,21 @@ Example : .covid Sri Lanka°
 │  ◎Android Emulator Form Pc =.em
 │
 │         ✨POWERD BY✨
-│        ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠
+│        😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈
 ╰──────────────
 `, rowId:"rowid6"},
-        {title: '⎝🛡️ Apk Store 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 Apk Store 😈', description: `▷▷▷▷▷▷\n\n\n
 ╔═════════════════════╗
-║         ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠   
+║         😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈   
 ║        ║✨╚APK STORE╝✨║
 ║
 ║    Coming Soon
 ║
-║ ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠   
+║ 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈   
 ╚═════════════════════╝
 
 `, rowId:"rowid20"},
-        {title: '⎝🛡️ DOWNLOADER 🛡️⎠', description: `▷▷▷▷▷▷\n\n\n
+        {title: '😈 DOWNLOADER 😈', description: `▷▷▷▷▷▷\n\n\n
  ╭────────────────
  │   ✨  Downloader ✨
  │
@@ -1119,9 +1119,9 @@ Example : .covid Sri Lanka°
  │
  ╰────────────────
 `, rowId:"rowid9"},
-        {title: '⎝🛡️ABOUT  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   BOT 🛡️⎠', description:`▷▷▷▷▷▷\n\n\n
+        {title: '😈ABOUT  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   BOT 😈', description:`▷▷▷▷▷▷\n\n\n
 ✨ Developer : Janith sadanuwan
-✨ Bot             : ⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ WhatsApp User Bot v4.0.0
+✨ Bot             : 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 WhatsApp User Bot v4.0.0
 ✨ Language : Sinhala & English
 ✨ Sponcer Team : PEARL TEAM SRI LANKA
 ✨ Develop language : Node js
@@ -1129,11 +1129,11 @@ Example : .covid Sri Lanka°
 `, rowId:"rowid2"}
        ]
        
-       const sections = [{title: "⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛", rows: rows}]
+       const sections = [{title: "😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 CMD ✨ PANEL. 📛", rows: rows}]
        
        const button = {
         buttonText: 'Click Me▷',
-        description: "⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠ CMD ✨ PANEL. 📛",
+        description: "😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 CMD ✨ PANEL. 📛",
         sections: sections,
         listType: 1
        }
