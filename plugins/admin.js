@@ -1,36 +1,23 @@
-/* Copyright (C) 2021 T-REX
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-T-REX HIRUWA
-*/
-
-const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = require('@adiwajshing/baileys');
+const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
 const Trex = require('../events');
 const Config = require('../config');
-const got = require("got");
 
 const Language = require('../language');
 const Lang = Language.getString('admin');
 const mut = Language.getString('mute');
-
 async function checkImAdmin(message, user = message.client.user.jid) {
     var grup = await message.client.groupMetadata(message.jid);
     var sonuc = grup['participants'].map((member) => {
-        if (member.id.split('@')[0] === user.split('@')[0] && member.isAdmin) return true; else; return false;
+        
+        if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
     });
     return sonuc.includes(true);
 }
 
-Trex.addrex({pattern: 'admin', desc: Lang.ADMINDESC, fromMe: true,  deleteCommand: false,  dontAddCommandList: false}, (async (message, match) => {    
 
-    await message.sendMessage(Lang.AD_DESC);
-}));
-
-Trex.addrex({pattern: 'ban ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.BAN_DESC, dontAddCommandList: true}, (async (message, match) => {  
+Trex.addrex({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
+    if (!im) return await message.client.sendMessage(message.jid,'🥺',MessageType.text);
 
     if (Config.BANMSG == 'default') {
         if (message.reply_message !== false) {
@@ -58,7 +45,7 @@ Trex.addrex({pattern: 'ban ?(.*)', fromMe: true,  deleteCommand: false,  onlyGro
                 etiketler += '@' + user.split('@')[0] + ',';
             });
 
-            await message.client.sendMessage(message.jid,etiketler + Config.BANMSG, MessageType.text, {contextInfo: {mentionedJid: message.mention}});
+            await message.client.sendMessage(message.jid,etiketler + '😪 bye bye!', MessageType.text, {contextInfo: {mentionedJid: message.mention}});
             await message.client.groupRemove(message.jid, message.mention);
         } else {
             return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
@@ -66,7 +53,7 @@ Trex.addrex({pattern: 'ban ?(.*)', fromMe: true,  deleteCommand: false,  onlyGro
     }
 }));
 
-Trex.addrex({pattern: 'add(?: |$)(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.ADD_DESC, dontAddCommandList: true}, (async (message, match) => {  
+Trex.addrex({pattern: 'add(?: |$)(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -100,7 +87,7 @@ Trex.addrex({pattern: 'add(?: |$)(.*)', fromMe: true,  deleteCommand: false,  on
     }
 }));
 
-Trex.addrex({pattern: 'promote ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.PROMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Trex.addrex({pattern: 'promote ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -158,7 +145,7 @@ Trex.addrex({pattern: 'promote ?(.*)', fromMe: true,  deleteCommand: false,  onl
     }
 }));
 
-Trex.addrex({pattern: 'demote ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.DEMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Trex.addrex({pattern: 'demote ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.DEMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN);
 
@@ -216,7 +203,7 @@ Trex.addrex({pattern: 'demote ?(.*)', fromMe: true,  deleteCommand: false,  only
     }
 }));
 
-Trex.addrex({pattern: 'mute ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.MUTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Trex.addrex({pattern: 'mute ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -891,7 +878,7 @@ Trex.addrex({pattern: 'mute ?(.*)', fromMe: true,  deleteCommand: false,  onlyGr
             await message.client.groupSettingChange(message.jid, GroupSettingChange.messageSend, false);
             await message.client.sendMessage(message.jid,Lang.UNMUTED,MessageType.text);
         }
-        else if (match[1] !== '1m' || match[1] !== '2m' || match[1] !== '3m' || match[1] !== '4m' || match[1] !== '5m' || match[1] !== '6m' || match[1] !== '7m' || match[1] !== '8m' || match[1] !== '9m' || match[1] !== '10m' || match[1] !== '11m' || match[1] !== '12m' || match[1] !== '13m' || match[1] !== '14m' || match[1] !== '15m' || match[1] !== '16m' || match[1] !== '17m' || match[1] !== '18m' || match[1] !== '19m' || match[1] !== '20m' || match[1] !== '21m' || match[1] !== '22m' || match[1] !== '23m' || match[1] !== '24m' || match[1] !== '25m' || match[1] !== '26m' || match[1] !== '27m' || match[1] !== '28m' || match[1] !== '29m' || match[1] !== '30m' || match[1] !== '31m' || match[1] !== '32m' || match[1] !== '33m' || match[1] !== '34m' || match[1] !== '35m' || match[1] !== '36m' || match[1] !== '37m' || match[1] !== '38m' || match[1] !== '39m' || match[1] !== '40m' || match[1] !== '41m' || match[1] !== '42m' || match[1] !== '43m' || match[1] !== '44m' || match[1] !== '45m' || match[1] !== '46m' || match[1] !== '47m' || match[1] !== '48m' || match[1] !== '49m' || match[1] !== '50m' || match[1] !== '51m' || match[1] !== '52m' || match[1] !== '53m' || match[1] !== '54m' || match[1] !== '55m' || match[1] !== '56m' || match[1] !== '57m' || match[1] !== '58m' || match[1] !== '59m' || match[1] !== '1h' || match[1] !== '2h' || match[1] !== '3h' || match[1] !== '4h' || match[1] !== '5h' || match[1] !== '6h' || match[1] !== '7h' || match[1] !== '8h' || match[1] !== '9h' || match[1] !== '10h' || match[1] !== '11h' || match[1] !== '12h' || match[1] !== '1d' || match[1] !== '2d' || match[1] !== '3d') {
+        else {
             return await message.client.sendMessage(message.jid, mut.TÜR, MessageType.text);
         }
     }
@@ -1566,13 +1553,13 @@ Trex.addrex({pattern: 'mute ?(.*)', fromMe: true,  deleteCommand: false,  onlyGr
             await message.client.groupSettingChange(message.jid, GroupSettingChange.messageSend, false);
             await message.client.sendMessage(message.jid,Config.UNMUTEMSG,MessageType.text);
         }
-        else if (match[1] !== '1m' || match[1] !== '2m' || match[1] !== '3m' || match[1] !== '4m' || match[1] !== '5m' || match[1] !== '6m' || match[1] !== '7m' || match[1] !== '8m' || match[1] !== '9m' || match[1] !== '10m' || match[1] !== '11m' || match[1] !== '12m' || match[1] !== '13m' || match[1] !== '14m' || match[1] !== '15m' || match[1] !== '16m' || match[1] !== '17m' || match[1] !== '18m' || match[1] !== '19m' || match[1] !== '20m' || match[1] !== '21m' || match[1] !== '22m' || match[1] !== '23m' || match[1] !== '24m' || match[1] !== '25m' || match[1] !== '26m' || match[1] !== '27m' || match[1] !== '28m' || match[1] !== '29m' || match[1] !== '30m' || match[1] !== '31m' || match[1] !== '32m' || match[1] !== '33m' || match[1] !== '34m' || match[1] !== '35m' || match[1] !== '36m' || match[1] !== '37m' || match[1] !== '38m' || match[1] !== '39m' || match[1] !== '40m' || match[1] !== '41m' || match[1] !== '42m' || match[1] !== '43m' || match[1] !== '44m' || match[1] !== '45m' || match[1] !== '46m' || match[1] !== '47m' || match[1] !== '48m' || match[1] !== '49m' || match[1] !== '50m' || match[1] !== '51m' || match[1] !== '52m' || match[1] !== '53m' || match[1] !== '54m' || match[1] !== '55m' || match[1] !== '56m' || match[1] !== '57m' || match[1] !== '58m' || match[1] !== '59m' || match[1] !== '1h' || match[1] !== '2h' || match[1] !== '3h' || match[1] !== '4h' || match[1] !== '5h' || match[1] !== '6h' || match[1] !== '7h' || match[1] !== '8h' || match[1] !== '9h' || match[1] !== '10h' || match[1] !== '11h' || match[1] !== '12h' || match[1] !== '1d' || match[1] !== '2d' || match[1] !== '3d') {
+        else {
             return await message.client.sendMessage(message.jid, mut.TÜR, MessageType.text);
         }
     }
 }));
 
-Trex.addrex({pattern: 'unmute ?(.*)', fromMe: true,  deleteCommand: false,  onlyGroup: true, desc: Lang.UNMUTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
+Trex.addrex({pattern: 'unmute ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1586,38 +1573,20 @@ Trex.addrex({pattern: 'unmute ?(.*)', fromMe: true,  deleteCommand: false,  only
     }
 }));
 
-Trex.addrex({pattern: 'clear', fromMe: true,  deleteCommand: false,  desc: Lang.END, dontAddCommandList: true}, (async (message, match) => {
-
-    await message.sendMessage('```🖲️  ➢ Chat clearing...```');
-    await message.client.modifyChat (message.jid, ChatModification.delete);
-    await message.sendMessage('```🖲️  ➢ All Chat cleared```');
-}));
-
-Trex.addrex({pattern: 'gname ?(.*)', onlyGroup: true, fromMe: true,  deleteCommand: false,  dontAddCommandList: true}, (async (message, match) => {
-    var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_SUB);
-    
-    await message.client.groupUpdateSubject(message.jid, match[1]);
-    await message.client.sendMessage(message.jid,Lang.SUB,MessageType.text);
-    }
-));
-
-Trex.addrex({pattern: 'invite ?(.*)', fromMe: true, dontAdCommandList: true, onlyGroup: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
+Trex.addrex({pattern: 'invite ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
-    await message.client.sendMessage(message.jid,Lang.INVITE + 'https://chat.whatsapp.com/' + invite, MessageType.text);
-
+    await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }));
-/*
-Trex.addrex({pattern: 'search ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SEARCH, dontAddCommandList: true}, async (message, match) => {
-    const url = `https://gist.github.com/DARKCRIME1/e59aa70790d6238bf88a2aed62357ff9/raw`;
-        const response = await got(url);
-        const json = JSON.parse(response.body);
-        if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🍁 T Rex BOT supported plugins 🍁*\n\nYou can install these plugins by *.plug _<plugin_link>_*\nExample : .plug https://gist.github.com/BlackAmda/a06509cf406c3eb172e5173900d0ef87\n\n' + json.sinhala, MessageType.text);
-});*/
+Trex.addrex({pattern: 'name ?(.*)', onlyGrpSew: true, fromMe: true, dontAdCommandList: true,desc: SEW}, (async (message, match) => {
+    var im = await checkImAdmin(message);
+    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
+    if (match[1] === '') return await message.client.sendMessage(message.jid,SEWA);
+    await message.client.groupUpdateSubject(message.jid, match[1]);
+    await message.client.sendMessage(message.jid,SEWB,MessageType.text);
+    }
+));
 
 module.exports = {
     checkImAdmin: checkImAdmin
