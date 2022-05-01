@@ -558,9 +558,8 @@ Example : .covid Sri Lanka°
 ✨ Developer : janih   sadanuwan
 ✨ Bot             : 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 WhatsApp User Bot v4.0.0
 ✨ Language : Sinhala & English
-✨ Sponcer Team : PEARL TEAM SRI LANKA
 ✨ Develop language : Node js
-✨ Developer no : http://wa.me/+94720603183
+
 `, rowId:"rowid2"}
        ]
        
@@ -1121,11 +1120,10 @@ Example : .covid Sri Lanka°
 `, rowId:"rowid9"},
         {title: '😈ABOUT  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   BOT 😈', description:`▷▷▷▷▷▷\n\n\n
 ✨ Developer : Janith sadanuwan
-✨ Bot             : 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 WhatsApp User Bot v4.0.0
+✨ Bot       : 😈  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   😈 WhatsApp User Bot 
 ✨ Language : Sinhala & English
-✨ Sponcer Team : PEARL TEAM SRI LANKA
 ✨ Develop language : Node js
-✨ Developer no : http://wa.me/+94720603183
+
 `, rowId:"rowid2"}
        ]
        
