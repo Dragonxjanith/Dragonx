@@ -1,10 +1,12 @@
-const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
+const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = require('@adiwajshing/baileys');
 const Trex = require('../events');
 const Config = require('../config');
+const got = require("got");
 
 const Language = require('../language');
 const Lang = Language.getString('admin');
 const mut = Language.getString('mute');
+
 async function checkImAdmin(message, user = message.client.user.jid) {
     var grup = await message.client.groupMetadata(message.jid);
     var sonuc = grup['participants'].map((member) => {
@@ -53,7 +55,7 @@ Trex.addrex({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.BAN
     }
 }));
 
-Trex.addrex({pattern: 'add(?: |$)(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
+Trex.addrex({pattern: 'add(?: |$)(.*)', fromMe: true, dontAdCommandList: true, onlyGroup: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -87,7 +89,7 @@ Trex.addrex({pattern: 'add(?: |$)(.*)', fromMe: true, dontAdCommandList: true, o
     }
 }));
 
-Trex.addrex({pattern: 'promote ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
+Trex.addrex({pattern: 'promote ?(.*)', fromMe: true, dontAdCommandList: true, onlyGroup: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -145,7 +147,7 @@ Trex.addrex({pattern: 'promote ?(.*)', fromMe: true, dontAdCommandList: true, on
     }
 }));
 
-Trex.addrex({pattern: 'demote ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.DEMOTE_DESC}, (async (message, match) => {    
+Trex.addrex({pattern: 'demote ?(.*)', fromMe: true, dontAdCommandList: true, onlyGroup: true, desc: Lang.DEMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN);
 
@@ -203,7 +205,7 @@ Trex.addrex({pattern: 'demote ?(.*)', fromMe: true, dontAdCommandList: true, onl
     }
 }));
 
-Trex.addrex({pattern: 'mute ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
+Trex.addrex({pattern: 'mute ?(.*)', fromMe: true, dontAdCommandList: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1559,7 +1561,7 @@ Trex.addrex({pattern: 'mute ?(.*)', fromMe: true, dontAdCommandList: true, onlyG
     }
 }));
 
-Trex.addrex({pattern: 'unmute ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
+Trex.addrex({pattern: 'unmute ?(.*)', fromMe: true, dontAdCommandList: true, onlyGroup: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1573,18 +1575,18 @@ Trex.addrex({pattern: 'unmute ?(.*)', fromMe: true, dontAdCommandList: true, onl
     }
 }));
 
-Trex.addrex({pattern: 'invite ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
+Trex.addrex({pattern: 'invite ?(.*)', fromMe: true, dontAdCommandList: true, onlyGroup: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }));
-Trex.addrex({pattern: 'name ?(.*)', onlyGrpSew: true, fromMe: true, dontAdCommandList: true,desc: SEW}, (async (message, match) => {
+Trex.addrex({pattern: 'name ?(.*)', onlyGroup: true, fromMe: true, dontAdCommandList: true,desc:NEED_SUB }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
-    if (match[1] === '') return await message.client.sendMessage(message.jid,SEWA);
+    if (match[1] === '') return await message.client.sendMessage(message.jid,'hehe');
     await message.client.groupUpdateSubject(message.jid, match[1]);
-    await message.client.sendMessage(message.jid,SEWB,MessageType.text);
+    await message.client.sendMessage(message.jid,'hehe',MessageType.text);
     }
 ));
 
