@@ -31,7 +31,7 @@ if (Config.WORKTYPE == 'public') {
     Trex.addrex({pattern: 'adobe', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
 
-            var image = await axios.get ('https://telegra.ph/file/4fb6db2465bed4af3eb51.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/35883180004518cb15fe9.jpg', {responseType: 'arraybuffer'})
 
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╭───────────────
 │  🇱🇰 🕊 SOFTWARE STORE BY ᴊᴀɴɪᴛʜ ꜱᴀᴅᴀɴᴜᴡᴀɴ 🇱🇰 🇱🇰 🕊
@@ -54,7 +54,7 @@ if (Config.WORKTYPE == 'public') {
   Trex.addrex({pattern: 'os', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
 
-            var image = await axios.get ('https://telegra.ph/file/4b7a5d02fba1b2e147f41.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/35883180004518cb15fe9.jpg', {responseType: 'arraybuffer'})
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╭───────────────
 │  🇱🇰 🕊 SOFTWARE STORE BY ᴊᴀɴɪᴛʜ ꜱᴀᴅᴀɴᴜᴡᴀɴ 🇱🇰 🇱🇰 🕊
 │         Operating System
@@ -73,7 +73,7 @@ if (Config.WORKTYPE == 'public') {
   Trex.addrex({pattern: 'em', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
 
-            var image = await axios.get ('https://telegra.ph/file/4d6dc262fedc23e93cc69.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/35883180004518cb15fe9.jpg', {responseType: 'arraybuffer'})
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╭───────────────
 │  🇱🇰 🕊 SOFTWARE STORE BY ᴊᴀɴɪᴛʜ ꜱᴀᴅᴀɴᴜᴡᴀɴ 🇱🇰 🇱🇰 🕊
 │       Android Emulator From Pc
@@ -91,7 +91,7 @@ if (Config.WORKTYPE == 'public') {
     Trex.addrex({pattern: 'vs', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
 
-            var image = await axios.get ('https://telegra.ph/file/44f514afcbb5953196b92.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/35883180004518cb15fe9.jpg', {responseType: 'arraybuffer'})
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╭───────────────
 │  🇱🇰 🕊 SOFTWARE STORE BY ᴊᴀɴɪᴛʜ ꜱᴀᴅᴀɴᴜᴡᴀɴ 🇱🇰 🇱🇰 🕊
 │        Antivirus Softwares
