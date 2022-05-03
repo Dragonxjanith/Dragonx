@@ -12,14 +12,21 @@ const Lang = Language.getString('system_stats');
 
 
 if (Config.WORKTYPE == 'private') {
+    var menu = ''
+if (Config.LANG == 'SI') SYSDTXT = '💻 පද්ධති තත්ත්වය'
+if (Config.LANG == 'EN') SYSDTXT = '💻 System status'
+
+var version = ''
+if (Config.LANG == 'SI') VER = '🧬 Version'
+if (Config.LANG == 'EN') VER = '🧬 Version'
 
     Trex.addrex({pattern: 'alive', fromMe: true,  deleteCommand: false,  desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '🤟 I AM FINE 😜'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
+                {buttonId: BUTTHANDLE + 'version', buttonText: {displayText: version }, type: 1},
+                {buttonId: BUTTHANDLE + 'menu', buttonText: {displayText: menu }, type: 1}
  ]
 
 const btn = {
@@ -41,8 +48,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '🤟 I AM FINE 😜'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
+            {buttonId: BUTTHANDLE + 'version', buttonText: {displayText: version }, type: 1},
+            {buttonId: BUTTHANDLE + 'menu', buttonText: {displayText: menu }, type: 1}
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/35883180004518cb15fe9.jpg',
@@ -94,8 +101,8 @@ else if (Config.WORKTYPE == 'public') {
         if (Config.ALIVEMSG == 'default') {
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '🙈 I AM FINE 😜'}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
+                {buttonId: BUTTHANDLE + 'version', buttonText: {displayText: version }, type: 1},
+                {buttonId: BUTTHANDLE + 'menu', buttonText: {displayText: menu }, type: 1}
  ]
 
 const btn = {
@@ -123,8 +130,8 @@ const btn = {
     }
     else {
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '🤟 I AM FINE 😜'}, type: 1},//jakakkak
-  {buttonId: 'MEN', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
+  {buttonId: 'menu', buttonText: {displayText: 'Menu'}, type: 1},//jakakkak
+  {buttonId: 'version', buttonText: {displayText: 'Version'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/35883180004518cb15fe9.jpg',
