@@ -17,16 +17,9 @@ if (Config.WORKTYPE == 'private') {
 
         if (Config.ALIVEMSG == 'default') {
             
-            var BUTTHANDLE = '';
-            if (/\[(\W*)\]/.test(Build.HANDLERS)) {
-                BUTTHANDLE = Build.HANDLERS.match(/\[(\W*)\]/)[1][0];
-            } else {
-                BUTTHANDLE = '.';
-            }
-    
             const buttons = [
-            {buttonId: BUTTHANDLE + 'version', buttonText: {displayText: 'version'}, type: 1},
-            {buttonId: BUTTHANDLE + 'sysd', buttonText: {displayText: 'sysd' }, type: 1}
+  {buttonId: 'MENU', buttonText: {displayText: '🤟 I AM FINE 😜'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
  ]
 
 const btn = {
@@ -43,16 +36,13 @@ const btn = {
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "🇱🇰 Hay All I'm Alive now 🇱🇰\n\n🧿 My name : ⎝🛡️ Dragon x 🛡️⎠\n\n\n ◐. Developer:Janith Sadanuwan \n ◐. Github - https://tinyurl.com/ycq7ra4x \n ◐. Youtube - https://tinyurl.com/yalqofqs \n ◐. Owner -https://tinyurl.com/y7evah34  \n ◐. Our Web - https://tinyurl.com/y7ul7kt4 \n\n ◐. All Cammands -Type .menu\n\n\nThank You For Using ⎝🛡️ *Dragon x* 🛡️⎠"})
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
-        var BUTTHANDLE = '';
-        if (/\[(\W*)\]/.test(Build.HANDLERS)) {
-            BUTTHANDLE = Build.HANDLERS.match(/\[(\W*)\]/)[1][0];
-        } else {
-            BUTTHANDLE = '.';
-        }
 
+
+    }
+    else {
         const buttons = [
-        {buttonId: BUTTHANDLE + 'version', buttonText: {displayText: 'version'}, type: 1},
-        {buttonId: BUTTHANDLE + 'sysd', buttonText: {displayText: 'sysd' }, type: 1}
+  {buttonId: 'MENU', buttonText: {displayText: '🤟 I AM FINE 😜'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/35883180004518cb15fe9.jpg',
@@ -103,16 +93,9 @@ else if (Config.WORKTYPE == 'public') {
 
         if (Config.ALIVEMSG == 'default') {
             
-            var BUTTHANDLE = '';
-            if (/\[(\W*)\]/.test(Build.HANDLERS)) {
-                BUTTHANDLE = Build.HANDLERS.match(/\[(\W*)\]/)[1][0];
-            } else {
-                BUTTHANDLE = '.';
-            }
-    
             const buttons = [
-            {buttonId: BUTTHANDLE + 'version', buttonText: {displayText: 'version'}, type: 1},
-            {buttonId: BUTTHANDLE + 'sysd', buttonText: {displayText: 'sysd' }, type: 1}
+  {buttonId: 'MENU', buttonText: {displayText: '🙈 I AM FINE 😜'}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
  ]
 
 const btn = {
@@ -136,16 +119,12 @@ const btn = {
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
-        var BUTTHANDLE = '';
-        if (/\[(\W*)\]/.test(Build.HANDLERS)) {
-            BUTTHANDLE = Build.HANDLERS.match(/\[(\W*)\]/)[1][0];
-        } else {
-            BUTTHANDLE = '.';
-        }
 
+    }
+    else {
         const buttons = [
-        {buttonId: BUTTHANDLE + 'version', buttonText: {displayText: 'version'}, type: 1},
-        {buttonId: BUTTHANDLE + 'sysd', buttonText: {displayText: 'sysd' }, type: 1}
+  {buttonId: 'MENU', buttonText: {displayText: '🤟 I AM FINE 😜'}, type: 1},//jakakkak
+  {buttonId: 'MEN', buttonText: {displayText: '🥺 I  AM SAD 😥'}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/35883180004518cb15fe9.jpg',
