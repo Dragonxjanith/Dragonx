@@ -30,7 +30,7 @@ const Down = '🖲️  DOWNLOADING STATUS .'
 
         ffmpeg(location)
             .save('statu.mp4')
-            .on('end', async () => {
+            .on('end', async () => { 
                 await message.client.sendMessage(message.client.user.jid,fs.readFileSync('statu.mp4'), MessageType.video,{mimetype: Mimetype.mp4, caption: '⎝🛡️  ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ   🛡️⎠' ,quoted: message.data});
             });
         return 
