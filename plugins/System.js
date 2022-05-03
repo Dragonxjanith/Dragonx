@@ -10,7 +10,7 @@ let Work_Mode = Build.WORKTYPE == 'public' ? false : true
 
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
-
+ 
 var SYSDTXT = ''
 if (Build.LANG == 'SI') SYSDTXT = '💻 පද්ධති තත්ත්වය'
 if (Build.LANG == 'EN') SYSDTXT = '💻 System status'
