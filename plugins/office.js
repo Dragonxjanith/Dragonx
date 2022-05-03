@@ -9,7 +9,7 @@ if (Config.WORKTYPE == 'public') {
 
     Trex.addrex({pattern: 'office', fromMe: false,  deleteCommand: true }, (async (message, match) => {
 
-            var image = await axios.get ('https://telegra.ph/file/011d37f1cef06440daf7a.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/35883180004518cb15fe9.jpg', {responseType: 'arraybuffer'})
 
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `╭───────────────
 │ ⎝🛡️ SOFTWARE STORE BY Janith sadanwan 🛡️⎠
