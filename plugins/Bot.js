@@ -24,7 +24,7 @@ if (Config.WORKTYPE == 'private') {
 🧿 My name : 🛡 Dragon x 🛡\n\n\n\n ◐. Github - https://tinyurl.com/ycq7ra4x \n ◐. Youtube - https://tinyurl.com/yalqofqs \n ◐. Owner -https://tinyurl.com/y7evah34  \n ◐. Our Web - https://tinyurl.com/y7ul7kt4 \n\n ◐. All Cammands -Type .menu\n\n\nThank You For Using 🛡 *Dragon x* 🛡
 
 
-   🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰`})
+`})
 
     }));
 }
@@ -41,7 +41,7 @@ else if (Config.WORKTYPE == 'public') {
         
 🧿 My name : 🛡 Dragon x 🛡\n\n\n\n ◐. Github - https://tinyurl.com/ycq7ra4x \n ◐. Youtube - https://tinyurl.com/yalqofqs \n ◐. Owner -https://tinyurl.com/y7evah34  \n ◐. Our Web - https://tinyurl.com/y7ul7kt4 \n\n ◐. All Cammands -Type .menu\n\n\nThank You For Using 🛡 *Dragon x* 🛡
         
-    🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰`})
+ `})
         
 
 
@@ -59,7 +59,7 @@ else if (Config.WORKTYPE == 'public') {
 
 🧿 My name : 🛡 Dragon x 🛡\n\n\n\n ◐. Github - https://tinyurl.com/ycq7ra4x \n ◐. Youtube - https://tinyurl.com/yalqofqs \n ◐. Owner -https://tinyurl.com/y7evah34  \n ◐. Our Web - https://tinyurl.com/y7ul7kt4 \n\n ◐. All Cammands -Type .menu\n\n\nThank You For Using 🛡 *Dragon x* 🛡
 
-    🔰 *ꜰᴏʀ 24/7 ʜᴇʟᴘ ᴍꜱɢ ᴍᴇ* 🔰 `  ,quoted: message.data})
+ `  ,quoted: message.data})
 
     }));
 }
