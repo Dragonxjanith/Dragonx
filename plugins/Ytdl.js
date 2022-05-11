@@ -99,8 +99,8 @@ Trex.addrex({pattern: 'play ?(.*)', fromMe: true, desc: Lang.PLAY_DESC}, (async 
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,config.SU ,MessageType.text);
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
+                reply = await message.client.sendMessage(message.jid,fs.readFileSync('./' + title + '.jpg'), MessageType.image, { caption: '\n```Song Name :\n'+ title +' ```\n\n'+`🖲️.  *ඔබ සෙවූ ගීතය ඔබ වෙත එවමින් ඇත....*`+'\n' });
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 1, isForwarded: false }});
             });
     }));
     
